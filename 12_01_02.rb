@@ -15,4 +15,5 @@ input.each_cons(3) do |values|
 
   previous = current
 end
+
 puts increases
