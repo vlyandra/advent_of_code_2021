@@ -72,7 +72,7 @@ end
 
 def gas_ratings
   values = []
-  File.foreach('inputs/12_03_01.txt') do |line|
+  File.foreach('../inputs/12_03_01.txt') do |line|
     values << line.chomp.split("").map(&:to_i)
   end
 

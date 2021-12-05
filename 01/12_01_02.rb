@@ -1,6 +1,6 @@
 require 'csv'
 
-input = CSV.read("inputs/12_01_01.csv").flatten
+input = CSV.read("../inputs/12_01_01.csv").flatten
 
 increases = 0
 previous = 0

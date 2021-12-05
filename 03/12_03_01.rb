@@ -3,7 +3,7 @@ input_count = 0
 common = []
 uncommon = []
 
-File.foreach('inputs/12_03_01.txt') do |line|
+File.foreach('../inputs/12_03_01.txt') do |line|
   bits = line.split('')
   bits.each_with_index do |bit, i|
     if bit.to_i == 1

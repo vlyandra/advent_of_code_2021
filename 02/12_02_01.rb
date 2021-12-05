@@ -1,7 +1,6 @@
 horizontal = 0
-depth = 0
-aim = 0
-File.foreach('inputs/12_02_01.txt') do |line|
+vertical = 0
+File.foreach('../inputs/12_02_01.txt') do |line|
   puts line
   ary = line.split(' ')
   cmd = ary[0]
@@ -9,15 +8,13 @@ File.foreach('inputs/12_02_01.txt') do |line|
 
   if cmd == 'forward'
     horizontal += num
-    depth += aim * num
   elsif cmd == 'down'
-    aim += num
+    vertical += num
   elsif cmd == 'up'
-    aim -= num
+    vertical -= num
   end
 end
 
 puts horizontal
-puts depth
-puts aim
-puts horizontal * depth
+puts vertical
+puts horizontal * vertical
